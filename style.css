@@ -1,0 +1,242 @@
+body{
+    font-family: montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    background-color: rgb(199, 175, 131);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    box-shadow: 0px, 1px, 10px, rgba(0,0,0,0.4);   
+     
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo1{
+    float: left;
+
+    img{
+        height: 100px;
+        width: 100px;
+
+    }
+}
+
+.menu{
+    float: center;
+    line-height: 100px; 
+    }
+.menu a{
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: normal;
+    font-size: medium;
+    transition: all 500ms ease;
+    padding: 50px, 110px;
+    padding-right: 30px;
+    font-weight: 600;
+}
+
+.menu a:hover{
+    color:pink;
+    border-bottom: 2px end solid white;
+}
+
+
+.boton{
+    float: right;
+    color: pink;
+    text-decoration: none;
+    border-bottom: 2px solid pink;
+    margin-right: 5%;
+    font-weight: 600
+}
+main{
+
+    width: 100vw;
+    height: 600px;
+    .cremas{
+        height: 0%;
+        width: 0%;     
+    }
+
+}
+
+.cremas img{
+    width: 100vw;
+    height: 600px;
+    margin: 0%;
+}
+footer{
+    width: 100vw;
+    margin: 0%;
+   
+}
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(199, 175, 131);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+    height: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    font-family: montserrat;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;   
+}
+.pie-pagina .grupo-1 .box p{
+    font-family: montserrat;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.pie-pagina .grupo-1 .box h4{
+    font-family:montserrat;
+    color: white;    
+}
+
+.instagram{
+    display:inline-block;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.twitter{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+
+}
+.whatsapp{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+     
+}
+
+@media screen and(max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+}
+
+.conteiner1{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Pagina Siguiente */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:montserrrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+    
+form{
+    width: 300px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 4px 10px 10px #CCC; 
+    border-radius: 20px;
+}
+
+form input[type="text"], input[type="password"]{
+    outline: 0;
+    border: 1px solid #CCC;
+    width: 80%;
+    padding: 10px;
+
+}
+
+form label{
+    font-weight: 500;
+    padding: 10px;
+}
+
+.box-visible{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    outline: 0;
+    border: 0;
+    background-color: pink;
+    border-radius: 20px;
+    cursor:pointer;
+    width: 250px;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+form button:hover{
+    opacity: .75;
+}
